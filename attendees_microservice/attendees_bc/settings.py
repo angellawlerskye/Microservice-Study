@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_crontab",
+]
+
+CRONJOBS = [
+    ("* * * * *", "atttendees.poll.get_conferences"),
 ]
 
 MIDDLEWARE = [
