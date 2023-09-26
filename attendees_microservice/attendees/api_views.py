@@ -4,9 +4,14 @@ import json
 
 # from events.api_views import ConferenceListEncoder
 from common.json import ModelEncoder
-from .models import Attendee
+from .models import Attendee, ConferenceVO
 
 # from events.models import Conference
+
+
+class ConferenceVODetailEncoder(ModelEncoder):
+    model = ConferenceVO
+    properties = ["name", "import_href"]
 
 
 class AttendeeListEncoder(ModelEncoder):
