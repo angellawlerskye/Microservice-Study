@@ -34,7 +34,7 @@ class AttendeeDetailEncoder(ModelEncoder):
 
 
 @require_http_methods(["GET", "POST"])
-def api_list_attendees(request, conference_vo_id):
+def api_list_attendees(request, conference_vo_id=None):
     """
     Lists the attendees names and the link to the attendee
     for the specified conference id.
