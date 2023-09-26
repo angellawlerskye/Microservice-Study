@@ -3,6 +3,11 @@ from django.db import models
 from django.urls import reverse
 
 
+class ConferenceVO(models.Model):
+    import_href = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+
+
 class Attendee(models.Model):
     """
     The Attendee model represents someone that wants to attend
