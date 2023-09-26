@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 ]
 
 CRONJOBS = [
-    ("* * * * *", "atttendees.poll.get_conferences"),
+    ("* * * * *", "attendees.poll.get_conferences"),
 ]
 
 MIDDLEWARE = [
