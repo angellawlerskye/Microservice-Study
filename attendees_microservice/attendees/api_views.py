@@ -2,10 +2,11 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 import json
 
-from events.api_views import ConferenceListEncoder
+# from events.api_views import ConferenceListEncoder
 from common.json import ModelEncoder
 from .models import Attendee
-from events.models import Conference
+
+# from events.models import Conference
 
 
 class AttendeeListEncoder(ModelEncoder):
